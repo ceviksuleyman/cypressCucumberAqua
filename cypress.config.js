@@ -28,4 +28,6 @@ package.json file
     "nonGlobalStepDefinitions": true,
     "step_definitions": "cypress/e2e/exercises"
   },
+
+  npm install --save-dev @faker-js/faker
  */
