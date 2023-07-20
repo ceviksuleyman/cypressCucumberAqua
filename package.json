@@ -5,10 +5,6 @@
     "@faker-js/faker": "^8.0.2",
     "cypress": "^12.17.1"
   },
-  "cypress-cucumber-preprocessor": {
-    "nonGlobalStepDefinitions": true,
-    "step_definitions": "cypress/e2e"
-  },
   "description": "Cucumber Framework",
   "main": "cypress.config.js",
   "dependencies": {
@@ -177,7 +173,13 @@
     "yauzl": "^2.10.0"
   },
   "scripts": {
+    "script": "cypress run --browser chrome --headed",
+    "test2": "npm run script",
     "test": "npx cypress run --spec 'cypress/e2e/login.feature' --browser chrome --headed"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "step_definitions": "cypress/e2e"
   },
   "keywords": [
     "cypress"
