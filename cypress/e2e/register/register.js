@@ -16,6 +16,7 @@ Then(/^enter valid email address and click submit button$/, function () {
     cy.get(".login").click();
 
     cy.get("#email_create").type(email);
+
     cy.get("#SubmitCreate > span").click();
 });
 
