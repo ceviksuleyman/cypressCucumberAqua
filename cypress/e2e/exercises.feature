@@ -5,3 +5,4 @@ Feature: login test
     Then click signup/login button
     When enter email and password
     And click login button
+    And verify login

@@ -6,6 +6,7 @@ before(function () {
         this.data = data;
     });
 });
+
 Given("navigate to url", () => {
 
     cy.intercept({resourceType: /xhr|fetch/}, {log: false})
@@ -27,4 +28,9 @@ When("enter email and password", function () {
 
 When(/^click login button$/, function () {
     cy.get("button[data-qa='login-button']").click()
+});
+When(/^verify login$/, function () {
+
+    cy.get("a>b").should("have.text", "Automation")
+
 });
