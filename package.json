@@ -173,9 +173,11 @@
     "yauzl": "^2.10.0"
   },
   "scripts": {
-    "script": "cypress run --browser chrome --headed",
-    "test2": "npm run script",
-    "test": "npx cypress run --spec 'cypress/e2e/login.feature' --browser chrome --headed"
+    "test": "cypress run --browser chrome --headed",
+    "script": "npm run script",
+    "chrome": "npx cypress run --spec 'cypress/e2e/login.feature' --browser chrome --headed",
+    "edge": "npx cypress run --spec 'cypress/e2e/loginPom.feature' --browser edge --headed",
+    "electron": "npx cypress run --spec 'cypress/e2e/register.feature' --browser electron --headed"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true,
