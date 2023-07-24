@@ -29,6 +29,11 @@ class LoginPage {
 
         return cy.get('#header .row').screenshot()
     }
+
+    assertionFunc(locate, text){
+
+        return cy.get(locate).should("contain.text", text);
+    };
 }
 
 export default LoginPage;

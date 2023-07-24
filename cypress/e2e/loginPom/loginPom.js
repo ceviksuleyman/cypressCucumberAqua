@@ -7,6 +7,7 @@ const loginPage = new LoginPage();
 
 Given(/^pom navigate to url$/, function () {
 
+    cy.intercept({resourceType: /xhr|fetch/}, {log: false})
     cy.visit("https://www.automationexercise.com/")
 });
 Then(/^pom click signup\/login button$/, function () {
@@ -24,7 +25,8 @@ When(/^pom click login button$/, function () {
 });
 When(/^pom verify login$/, function () {
 
-    loginPage.getLoginAssertion("Automation");
+    //loginPage.getLoginAssertion("Automation");
+    loginPage.assertionFunc(":nth-child(10) > a", "Automation");
 
     loginPage
         .getHeader()

@@ -16,6 +16,7 @@ module.exports = defineConfig({
 /*
 npm init
 2.0.0
+npm install --save-dev typescript
 npm install cypress --sev-dev
 npx cypress open
 npm i -D cypress cypress-cucumber-preprocessor
