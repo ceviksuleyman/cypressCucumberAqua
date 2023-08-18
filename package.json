@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "devDependencies": {
     "@faker-js/faker": "^8.0.2",
-    "cypress": "^12.17.1"
+    "cypress": "^12.17.4"
   },
   "description": "Cucumber Framework",
   "main": "cypress.config.js",

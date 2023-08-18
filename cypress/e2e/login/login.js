@@ -7,10 +7,10 @@ before(function () {
     });
 });
 
-Given("navigate to url", () => {
+Given("navigate to url", function ()  {
 
     cy.intercept({resourceType: /xhr|fetch/}, {log: false})
-    cy.visit("https://www.automationexercise.com/")
+    cy.visit(this.data.url)
 })
 
 Then(/^click signup\/login button$/, function () {

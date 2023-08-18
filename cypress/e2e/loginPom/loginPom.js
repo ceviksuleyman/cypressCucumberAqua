@@ -8,7 +8,7 @@ const loginPage = new LoginPage();
 Given(/^pom navigate to url$/, function () {
 
     cy.intercept({resourceType: /xhr|fetch/}, {log: false})
-    cy.visit("https://www.automationexercise.com/")
+    cy.visit("/")
 });
 Then(/^pom click signup\/login button$/, function () {
 

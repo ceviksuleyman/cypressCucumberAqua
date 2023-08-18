@@ -8,7 +8,8 @@ module.exports = defineConfig({
             on('file:preprocessor', cucumber())
         },
         specPattern: "cypress/e2e/*.feature",
-        video:false
+        video:false,
+        baseUrl:"https://www.automationexercise.com/"
     },
 })
 
